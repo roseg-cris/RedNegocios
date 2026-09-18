@@ -13,7 +13,7 @@ $usuario = $stmt->fetch();
 if (!$usuario) {
     session_unset();
     session_destroy();
-    header('Location: ../../login_usuario.php');
+    header('Location: ../../usuario/login_usuario.php');
     exit;
 }
 
@@ -302,7 +302,7 @@ $misConversaciones = $stmt->fetchAll();
                             </div>
                             <div class="ps-block__right">
                             	<a href="../../panel/perfil/perfil_usuario.php">Mi cuenta</a>
-                            	<a href="../../logout_usuario.php">Cerrar sesión</a>
+                            	<a href="../../usuario/logout_usuario.php">Cerrar sesión</a>
                             </div>
                         </div>
 
@@ -399,7 +399,7 @@ $misConversaciones = $stmt->fetchAll();
                         </div>
                         <div class="ps-block__right">
                         	<a href="../../panel/perfil/perfil_usuario.php">Mi cuenta</a>
-                        	<a href="../../logout_usuario.php">Cerrar sesión</a>
+                        	<a href="../../usuario/logout_usuario.php">Cerrar sesión</a>
                         </div>
 
                     </div>
@@ -430,7 +430,7 @@ $misConversaciones = $stmt->fetchAll();
 
             </ul>
 
-            <a href="../../logout_usuario.php" class="float-right">Cerrar sesión</a>
+            <a href="../../usuario/logout_usuario.php" class="float-right">Cerrar sesión</a>
 
         </div>
 

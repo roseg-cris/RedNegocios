@@ -13,7 +13,7 @@ $usuario = $stmt->fetch();
 if (!$usuario) {
     session_unset();
     session_destroy();
-    header('Location: ../../login_usuario.php');
+    header('Location: ../../usuario/login_usuario.php');
     exit;
 }
 
@@ -289,7 +289,7 @@ $estadoBadge = [
                             </div>
                             <div class="ps-block__right">
                             	<a href="../../panel/perfil/perfil_usuario.php">Mi cuenta</a>
-                            	<a href="../../logout_usuario.php">Cerrar sesión</a>
+                            	<a href="../../usuario/logout_usuario.php">Cerrar sesión</a>
                             </div>
                         </div>
 
@@ -386,7 +386,7 @@ $estadoBadge = [
                         </div>
                         <div class="ps-block__right">
                         	<a href="../../panel/perfil/perfil_usuario.php">Mi cuenta</a>
-                        	<a href="../../logout_usuario.php">Cerrar sesión</a>
+                        	<a href="../../usuario/logout_usuario.php">Cerrar sesión</a>
                         </div>
 
                     </div>
@@ -417,7 +417,7 @@ $estadoBadge = [
 
             </ul>
 
-            <a href="../../logout_usuario.php" class="float-right">Cerrar sesión</a>
+            <a href="../../usuario/logout_usuario.php" class="float-right">Cerrar sesión</a>
 
         </div>
 

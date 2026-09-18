@@ -1,10 +1,4 @@
 <?php
-/**
- * Menú de categorías para la barra lateral móvil.
- * Requiere que $pdo ya esté disponible (config/config.php ya incluido).
- * El clic para desplegar subcategorías ya funciona con el JS existente
- * (subMenuToggle() en assets/js/main.js, selector .ps-list--categories).
- */
 
 $categoriasMenuMovil = $pdo->query(
     "SELECT c.id, c.nombre,
@@ -71,4 +65,4 @@ foreach ($categoriasMenuMovil as $fila) {
 
 	</div>
 
-</div><!-- End menu-->
+</div>

@@ -1,8 +1,5 @@
 <?php
-/**
- * Barra de búsqueda del header (versión escritorio).
- * Requiere que $pdo ya esté disponible (config/config.php ya incluido).
- */
+
 
 $categoriasBuscador = $pdo->query(
     "SELECT id, nombre FROM categorias WHERE estado = 'activo' ORDER BY nombre"

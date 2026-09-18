@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/config/config.php';
-require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../includes/auth.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: login_usuario.php');
@@ -39,8 +39,8 @@ $_SESSION['nombre'] = $usuario['nombre'];
 // Se acepta cualquier cuenta (cliente o negocio) y se manda al panel que le corresponda,
 // para que no quede atrapado si llega aquí con una cuenta del otro tipo.
 if ($usuario['rol'] === 'negocio') {
-    header('Location: panel/perfil/perfil_negocio.php');
+    header('Location: ../panel/perfil/perfil_negocio.php');
 } else {
-    header('Location: panel/perfil/perfil_usuario.php');
+    header('Location: ../panel/perfil/perfil_usuario.php');
 }
 exit;

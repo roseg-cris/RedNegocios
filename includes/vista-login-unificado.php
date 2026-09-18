@@ -196,7 +196,7 @@
                             	<a href="logout_negocio.php">Cerrar sesión</a>
                             	<?php elseif (clienteAutenticado()): ?>
                             	<a href="panel/perfil/perfil_usuario.php">Mi cuenta</a>
-                            	<a href="logout_usuario.php">Cerrar sesión</a>
+                            	<a href="usuario/logout_usuario.php">Cerrar sesión</a>
                             	<?php else: ?>
                             	<a href="login.php#sign-in">Iniciar sesión</a>
                             	<?php endif; ?>

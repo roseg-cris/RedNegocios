@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/config/config.php';
-require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../includes/auth.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: registro_usuario.php');
@@ -44,7 +44,7 @@ try {
     $_SESSION['rol'] = 'cliente';
     $_SESSION['nombre'] = $nombre;
 
-    header('Location: panel/perfil/perfil_usuario.php');
+    header('Location: ../panel/perfil/perfil_usuario.php');
     exit;
 
 } catch (Exception $e) {

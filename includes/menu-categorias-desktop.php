@@ -1,10 +1,4 @@
 <?php
-/**
- * Menú desplegable de categorías (versión escritorio).
- * Requiere que $pdo ya esté disponible (config/config.php ya incluido).
- * Al hacer clic en una categoría se despliegan sus subcategorías (ver
- * categoryDropdownToggle() en assets/js/main.js).
- */
 
 $iconosCategoria = [
     'Casa y jardín' => 'icon-home3',
@@ -74,4 +68,4 @@ foreach ($categoriasMenu as $fila) {
 
     </div>
 
-</div><!-- End menu-->
+</div>
