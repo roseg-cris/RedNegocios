@@ -371,8 +371,8 @@ require_once __DIR__ . '/includes/auth.php';
                             	<a href="panel/perfil/perfil_usuario.php">Mi cuenta</a>
                             	<a href="logout_usuario.php">Cerrar sesión</a>
                             	<?php else: ?>
-                            	<a href="login_negocio.php#sign-in">Iniciar sesión</a>
-                            	<a href="registro_negocio.php#register">Registrarse</a>
+                            	<a href="login.php#sign-in">Iniciar sesión</a>
+                            	<a href="login.php#register">Registrarse</a>
                             	<?php endif; ?>
                             </div>
                         </div>
@@ -664,8 +664,8 @@ require_once __DIR__ . '/includes/auth.php';
                         	<a href="panel/perfil/perfil_usuario.php">Mi cuenta</a>
                         	<a href="logout_usuario.php">Cerrar sesión</a>
                         	<?php else: ?>
-                        	<a href="login_negocio.php#sign-in">Iniciar sesión</a>
-                        	<a href="registro_negocio.php#register">Registrarse</a>
+                        	<a href="login.php#sign-in">Iniciar sesión</a>
+                        	<a href="login.php#register">Registrarse</a>
                         	<?php endif; ?>
                         </div>
 
